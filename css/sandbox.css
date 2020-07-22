@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff; }
+
+html {
+  font-size: 62.5%; }
+
+nav {
+  width: 100%;
+  height: 5rem;
+  background-color: #165EB4;
+  position: fixed;
+  z-index: 2;
+  animation: dropin 2s;
+  box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.5); }
+  nav .page {
+    position: absolute;
+    float: left;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: .5rem; }
+  nav .nav {
+    list-style: none;
+    float: right;
+    margin-right: 2rem; }
+    nav .nav li {
+      padding: 1.5rem 3rem;
+      display: inline-block; }
+      nav .nav li a {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 1.5rem;
+        margin: .4rem .2rem; }
+        nav .nav li a:hover {
+          background-color: #133567; }
+
+.logo-box {
+  height: 21rem;
+  display: block;
+  margin: 0 auto;
+  padding-top: 7.5rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #165EB4, #165EB4, #165EB4, rgba(93, 156, 232, 0.3), rgba(93, 156, 232, 0.01)); }
+
+.logo {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 20px;
+  box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.5); }
+
+.background {
+  position: fixed;
+  background-image: url("../logos/el_guitars.jpg");
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-size: cover;
+  background-position: center; }
+
+.bio {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+  .bio-text {
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-top: 2rem; }
+  .bio #annoying {
+    width: 55rem;
+    height: 18rem; }
+
+.bio-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #133567;
+  padding-bottom: 1.5rem;
+  padding-top: 3rem;
+  text-transform: uppercase; }
+
+#bass {
+  background-color: #fff;
+  padding: 1rem; }
+
+@media only screen and (max-width: 800px) {
+  .background {
+    background-size: 80%; } }
+
+@keyframes dropin {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
